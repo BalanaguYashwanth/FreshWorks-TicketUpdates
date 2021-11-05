@@ -1,0 +1,27 @@
+{
+  "platform-version": "2.2",
+  "product": {
+    "freshdesk": {
+      "events":{
+        "onTicketCreate":{
+          "handler":"onTicketCreateCallback"
+        }
+      },
+      "location": {
+        "ticket_background": {
+          "url": "ticket_background.html"
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "axios": "0.24.0"
+  },
+  "whitelisted-domains": [
+    "https://*.m.pipedream.net"
+  ],
+  "engines": {
+    "node": "12.22.6",
+    "fdk": "7.1.0"
+  }
+}
